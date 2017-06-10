@@ -1,0 +1,113 @@
+body{
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+	background: #02010a;
+}
+#contenido{
+	
+	width: 90%;
+	margin: 0 auto;
+	animation: miAnimacion 2s;
+}
+header{
+	background-color: #5b7989;
+	padding: 1vh;
+	color: white;
+	text-shadow: 2px 2px 2px #02010A;
+	border-radius: 15px 15px 0 0;
+}
+header h1{
+	background-color: #5b7989;
+}
+
+nav{
+	background-color: #5b7989;
+	text-align: right;
+}
+header a{
+	background-color: #5b7989;
+	text-decoration: none;
+	text-shadow: none;
+	color: white;
+	padding-right: 5vh;	
+}
+.i1{
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+.i2, .i4, .i6{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);	
+}
+.i3{
+	-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+footer{
+
+	background-color: #C6d5c5;
+	display: flex;
+	flex-flow: row wrap;
+	border-radius: 0 0 15px 15px;
+}
+footer div{
+	padding-left: 2vh;
+	width: 23%;
+	background-color: #C6d5c5;
+	
+}
+#contiene_imagenes{
+	
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row wrap;
+}
+#contiene_imagenes{
+	text-align: center;
+}
+#contiene_imagenes div img{
+	
+	padding: 5vh;
+	width: 300px;
+	height: 200px;
+}
+@-webkit-keyframes miAnimacion {
+0% {
+margin-top: 150%
+}
+60% {
+margin-top: -5%
+}
+100% {
+margin-top: 0%
+}
+}
+
+@media (max-width:900px ){
+	h1{
+		text-align: center;
+	}
+	ul{
+		text-align: center;
+	}
+	.i1,.i2,.i3,.i4,.i5,.i6{
+		width: 100%;
+		text-align: center;
+
+	}
+
+	footer{
+		clear: both;
+		background-color: #C6d5c5;
+		display: flex;
+		flex-flow: column; wrap;
+		border-radius: 0 0 15px 15px;
+	}
+	footer div{
+		padding-left: 1vh;
+		width: 100%;
+		background-color: #C6d5c5;
+	
+	}
+
+}
