@@ -1,0 +1,150 @@
+body{
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+	background: #02010a;
+}
+article img{
+	width: 500px;
+	height: 300px;
+	border: 1px solid;
+}
+
+#contenido{
+	
+	width: 90%;
+	margin: 0 auto;
+	animation: miAnimacion 2s;
+}
+header{
+	background-color: #5b7989;
+	padding: 1vh;
+	color: white;
+	
+	border-radius: 15px 15px 0 0;
+}
+header h1{
+	background-color: #5b7989;
+	text-shadow: 2px 2px 2px #02010A;
+}
+
+nav{
+	background-color: #5b7989;
+	text-align: right;
+}
+header a{
+	background-color: #5b7989;
+	text-decoration: none;
+	text-shadow: none;
+	color: white;
+	padding-right: 5vh;	
+}
+
+#fondo{
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: row nowrap;
+	
+}
+.imagen_central{
+	background-color: #82c3a6;
+	text-align: center;
+	padding: 2vh;
+}
+.imagen_izquierda{
+	width: 50%;
+	text-align: center;
+	padding: 7vh;
+}
+.imagen_derecha{
+	width: 50%;
+	text-align: center;
+	padding: 7vh;
+
+}
+
+.imagen_izquierda img:hover{
+	transform: rotate(10deg);
+	box-shadow:2px 2px 2px 2px #82c3a6;
+}
+
+.imagen_derecha img:hover{
+	-webkit-transform: translate(20px,-5px);
+	box-shadow:2px 2px 2px 2px #82c3a6;
+}
+
+footer{
+	clear: both;
+	background-color: #C6d5c5;
+	display: flex;
+	flex-flow: row wrap;
+	border-radius: 0 0 15px 15px;
+}
+footer div{
+	padding-left: 2vh;
+	width: 23%;
+	background-color: #C6d5c5;
+	
+}
+
+@-webkit-keyframes miAnimacion {
+0% {
+margin-top: 150%
+}
+60% {
+margin-top: -5%
+}
+100% {
+margin-top: 0%
+}
+}
+
+@media (max-width:900px ){
+	h1{
+		text-align: center;
+	}
+	ul{
+		text-align: center;
+	}
+	.imagen_izquierda img, .imagen_derecha img{
+		width: 450px;
+		height: 250px;
+		text-align:center;
+	}
+	.i_i,.i_d{
+		width: 100%;
+		text-align: center;
+	}
+	#fondo{
+		background-color: #d5c75f;
+		display: flex;
+		flex-flow: column wrap;
+}
+	.imagen_central{
+		width: 100%
+		background-color: #82c3a6;
+		text-align: center;
+		padding: 2vh;
+	}
+
+	.imagen_izquierda:hover{
+		transform: rotate(10deg);
+	}
+	.imagen_derecha:hover{
+		transform: translateX(10px);
+	}
+
+	footer{
+		clear: both;
+		background-color: #C6d5c5;
+		display: flex;
+		flex-flow: column; wrap;
+		border-radius: 0 0 15px 15px;
+	}
+	footer div{
+		padding-left: 1vh;
+		width: 100%;
+		background-color: #C6d5c5;
+	
+	}
+
+}
